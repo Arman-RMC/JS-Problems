@@ -257,39 +257,45 @@
 // "adult" (20-64)
 // "senior" (65+) Return an object with categories as keys and arrays of names as values.
 
-const people = [
-  { name: "Raman", age: 10 },
-  { name: "Sakshi", age: 15 },
-  { name: "Vicki", age: 35 },
-  { name: "Pramod", age: 70 }
-];
+// const people = [
+//   { name: "Raman", age: 10 },
+//   { name: "Sakshi", age: 15 },
+//   { name: "Vicki", age: 35 },
+//   { name: "Pramod", age: 70 }
+// ];
 
-console.log(groupByAge(people));
+// console.log(groupByAge(people));
 
-function groupByAge(people) {
-  const ageGroups = {
-      child: [],
-      teen: [],
-      adult: [],
-      senior: []
-  };
+// function groupByAge(people) {
+//   const ageGroups = {
+//       child: [],
+//       teen: [],
+//       adult: [],
+//       senior: []
+//   };
 
-  people.forEach(person => {
-      const { name, age } = person;
+//   people.forEach(person => {
+//       const { name, age } = person;
 
-      if (age >= 0 && age <= 12) {
-          ageGroups.child.push(name);
-      } else if (age >= 13 && age <= 19) {
-          ageGroups.teen.push(name);
-      } else if (age >= 20 && age <= 64) {
-          ageGroups.adult.push(name);
-      } else if (age >= 65) {
-          ageGroups.senior.push(name);
-      }
-  });
+//       if (age >= 0 && age <= 12) {
+//           ageGroups.child.push(name);
+//       } else if (age >= 13 && age <= 19) {
+//           ageGroups.teen.push(name);
+//       } else if (age >= 20 && age <= 64) {
+//           ageGroups.adult.push(name);
+//       } else if (age >= 65) {
+//           ageGroups.senior.push(name);
+//       }
+//   });
 
-  return ageGroups;
-}
+//   return ageGroups;
+// }
+
+
+
+// Number to Words Converter with switch case
+// Write a function numberToWords(num) that takes a number (0-9) and returns its English word representation. If the number is not between 0 and 9, return "Invalid number". Use switch case to implement this.
+
 
 
 
