@@ -291,12 +291,69 @@
 //   return ageGroups;
 // }
 
-
+// Qs-9
 
 // Number to Words Converter with switch case
 // Write a function numberToWords(num) that takes a number (0-9) and returns its English word representation. If the number is not between 0 and 9, return "Invalid number". Use switch case to implement this.
 
+function numberToWords(num) {
+    switch (num) {
+        case 0:
+            return "Zero";
+        case 1:
+            return "One";
+        case 2:
+            return "Two";
+        case 3:
+            return "Three";
+        case 4:
+            return "Four";
+        case 5:
+            return "Five";
+        case 6:
+            return "Six";
+        case 7:
+            return "Seven";
+        case 8:
+            return "Eight";
+        case 9:
+            return "Nine";
+        default:
+            return "Invalid number";
+    }
+}
+
+
+console.log(numberToWords(3));  // Output: "Three"
+console.log(numberToWords(9));  // Output: "Nine"
+console.log(numberToWords(10)); // Output: "Invalid number"
 
 
 
 
+// Qs-10
+
+// Filtering Students with for loop and if-else
+// Create an array, students, with objects representing student data with name, age, and marks. Write a function getEligibleStudents(students, minMarks) that uses a for loop and if-else to filter and return students who scored above minMarks.
+
+const students = [
+    { name: "Pramod", age: 20, marks: 85 },
+    { name: "Raman", age: 22, marks: 70 },
+    { name: "Amit", age: 19, marks: 65 },
+    { name: "Vicki", age: 21, marks: 90 }
+];
+
+console.log(getEligibleStudents(students, 75));
+
+
+function getEligibleStudents(students, minMarks) {
+    const eligibleStudents = [];
+
+    for (let i = 0; i < students.length; i++) {
+        if (students[i].marks > minMarks) {
+            eligibleStudents.push(students[i]);
+        }
+    }
+
+    return eligibleStudents;
+}
